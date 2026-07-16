@@ -14,7 +14,12 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
+    <p class="desc">
+      {% if page.subtitle_highlight -%}
+        <strong class="subtitle-accent">{{ page.subtitle_highlight }}</strong>
+      {%- endif %}
+      {{ page.subtitle }}
+    </p>
   </header>
 
   <article>
@@ -41,7 +46,7 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <div class="clearfix bio">{{ content }}</div>
 
     {% if page.announcements and page.announcements.enabled %}
       <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></h2>
@@ -92,7 +97,7 @@ layout: default
   }
 
   .profile-social .contact-icons {
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     line-height: 1.5;
   }
 
@@ -102,8 +107,8 @@ layout: default
 
   .profile-social .contact-icons img,
   .profile-social .contact-icons svg {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.35rem;
+    height: 1.35rem;
     margin: 0;
   }
 </style>

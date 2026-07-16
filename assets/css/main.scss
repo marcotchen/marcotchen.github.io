@@ -28,8 +28,18 @@
 // Personal-site blue palette. Dark mode keeps al-folio's accessible cyan accent.
 :root {
   --global-theme-color: #2563a6;
-  --global-hover-color: #1d4f85;
+  --global-hover-color: #7d2528;
   --global-code-bg-color: rgb(37 99 166 / 5%);
+  --personal-accent-color: #972f31;
+  --personal-accent-hover-color: #7d2528;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #6fa8e5;
+  --global-hover-color: #e08b8d;
+  --global-code-bg-color: rgb(111 168 229 / 10%);
+  --personal-accent-color: #d46a6d;
+  --personal-accent-hover-color: #e08b8d;
 }
 
 html {
@@ -38,6 +48,90 @@ html {
 
 body {
   line-height: 1.62;
+}
+
+.post article .bio a {
+  color: var(--global-text-color);
+  font-weight: 400;
+
+  &:hover {
+    color: #737780;
+  }
+}
+
+html[data-theme="dark"] .post article .bio a:hover {
+  color: #a7abb2;
+}
+
+.post article .profile-social a,
+.post article .publication-venue a {
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.post article .publications .author a,
+.post article .publications .author a:hover {
+  border-bottom: 0;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  color: var(--personal-accent-color);
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
+}
+
+.post-header .subtitle-accent {
+  color: var(--personal-accent-color);
+  font-weight: 700;
+}
+
+.profile-social .contact-icons a,
+.profile-social .contact-icons a i::before {
+  color: var(--personal-accent-color);
+}
+
+.profile-social .contact-icons a:hover,
+.profile-social .contact-icons a:hover i::before {
+  color: var(--global-hover-color);
+}
+
+#search-toggle,
+#light-toggle,
+.publications .fa-circle-info {
+  color: var(--personal-accent-color);
+}
+
+#search-toggle:hover,
+#light-toggle:hover {
+  color: var(--personal-accent-hover-color);
+}
+
+.navbar-toggler .icon-bar {
+  background-color: var(--personal-accent-color);
+}
+
+progress {
+  color: var(--personal-accent-color);
+}
+
+progress::-webkit-progress-value,
+.progress-bar {
+  background-color: var(--personal-accent-color);
+}
+
+progress::-moz-progress-bar {
+  background-color: var(--personal-accent-color);
+}
+
+blockquote {
+  border-left-color: var(--personal-accent-color);
+}
+
+.header-bar h1,
+.publications h1 {
+  color: var(--personal-accent-color);
 }
 
 .publications {
@@ -82,18 +176,24 @@ body {
     .publication-venue {
       padding: 0.2rem 0.5rem;
       border-radius: 0.35rem;
+      background-color: var(--personal-accent-color);
+      color: white !important;
       font-size: 0.84rem;
       font-weight: 650;
       letter-spacing: 0.01em;
+
+      a {
+        color: inherit;
+      }
     }
 
     .publication-type {
       display: inline-block;
       padding: 0.15rem 0.48rem;
-      border: 1px solid color-mix(in srgb, var(--global-theme-color) 40%, transparent);
+      border: 1px solid color-mix(in srgb, var(--personal-accent-color) 40%, transparent);
       border-radius: 999px;
-      background: color-mix(in srgb, var(--global-theme-color) 7%, transparent);
-      color: var(--global-theme-color);
+      background: color-mix(in srgb, var(--personal-accent-color) 7%, transparent);
+      color: var(--personal-accent-color);
       font-size: 0.68rem;
       font-weight: 650;
       letter-spacing: 0.035em;
@@ -128,6 +228,11 @@ body {
         border-color: var(--global-divider-color);
         border-radius: 0.35rem;
         font-size: 0.8rem;
+
+        &:hover {
+          border-color: var(--global-hover-color);
+          color: var(--global-hover-color);
+        }
       }
     }
   }

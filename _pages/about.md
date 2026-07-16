@@ -2,7 +2,8 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate CS @ Tsinghua University
+subtitle_highlight: Undergraduate CS
+subtitle: "@ Tsinghua University"
 
 profile:
   align: right

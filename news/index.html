@@ -99,4 +99,13 @@ ninja.data = [{
       },
     },];
 
-</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> <script>
+        // Keep the theme control to two explicit states: light and dark.
+        if (determineThemeSetting() === 'system') {
+          setThemeSetting(determineComputedTheme());
+        }
+
+        toggleThemeSetting = () => {
+          setThemeSetting(determineComputedTheme() === 'dark' ? 'light' : 'dark');
+        };
+      </script> </body> </html>

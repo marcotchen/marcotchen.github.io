@@ -134,6 +134,11 @@ blockquote {
   color: var(--personal-accent-color);
 }
 
+::highlight(search) {
+  background-color: var(--personal-accent-color);
+  color: white;
+}
+
 .publications {
   margin-top: 1.5rem;
 

@@ -32,6 +32,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I'm Marco Chen, a senior CS undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn/) advised by Prof. [Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/publications.shtml) and Prof. [Jianfei Chen](https://ml.cs.tsinghua.edu.cn/~jianfei/). My current research interests primarily focus on optimization theory and efficient machine learning systems. I am currently a summer visiting researcher at [UC Berkeley Sky Computing Lab](https://sky.cs.berkeley.edu/), advised by Prof. [Ion Stoica](https://people.eecs.berkeley.edu/~istoica/).
+Hi! I'm Marco Chen, a senior CS undergraduate student at [Tsinghua University](https://www.tsinghua.edu.cn/) advised by Prof. [Jun Zhu](https://ml.cs.tsinghua.edu.cn/~jun/publications.shtml) and Prof. [Jianfei Chen](https://ml.cs.tsinghua.edu.cn/~jianfei/). My research interests primarily focus on optimization theory and efficient machine learning systems. I am currently a summer visiting researcher at [UC Berkeley Sky Computing Lab](https://sky.cs.berkeley.edu/), advised by Prof. [Ion Stoica](https://people.eecs.berkeley.edu/~istoica/).
 
 In my free time, I enjoy playing squash, reading, and occasionally playing the violin. If you want to collaborate, play squash, or just want to chat, feel free to email me at [marco.ty.chen@gmail.com](mailto:marco.ty.chen@gmail.com).

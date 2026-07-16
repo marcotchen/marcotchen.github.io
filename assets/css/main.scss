@@ -25,7 +25,7 @@
 @use "teachings";
 @use "typograms";
 
-// Personal-site palette. Dark mode keeps al-folio's existing cyan accent.
+// Personal-site blue palette. Dark mode keeps al-folio's accessible cyan accent.
 :root {
   --global-theme-color: #2563a6;
   --global-hover-color: #1d4f85;
@@ -33,7 +33,7 @@
 }
 
 html {
-  font-size: 17px;
+  font-size: 19px;
 }
 
 body {

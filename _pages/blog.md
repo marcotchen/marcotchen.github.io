@@ -2,8 +2,8 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
-nav_order: 1
+nav: false
+nav_order: 2
 pagination:
   enabled: true
   collection: posts
@@ -64,6 +64,7 @@ pagination:
 {% assign is_even = featured_posts.size | modulo: 2 %}
 <div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
 {% for post in featured_posts %}
+{% unless post.categories contains "sample-posts" %}
 <div class="col mb-4">
 <a href="{{ post.url | relative_url }}">
 <div class="card hoverable">
@@ -93,8 +94,10 @@ pagination:
               </div>
             </div>
           </a>
-        </div>
-      {% endfor %}
+
+</div>
+{% endunless %}
+{% endfor %}
       </div>
     </div>
     <hr>
@@ -110,6 +113,7 @@ pagination:
     {% endif %}
 
     {% for post in postlist %}
+    {% unless post.categories contains "sample-posts" %}
 
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
@@ -184,6 +188,8 @@ pagination:
 </div>
 {% endif %}
     </li>
+
+    {% endunless %}
 
     {% endfor %}
 

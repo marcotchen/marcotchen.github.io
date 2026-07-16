@@ -27,12 +27,12 @@ overrides:
     gem_version: 1.0.11
     upstream_path: _layouts/default.liquid
     upstream_sha256: 4b713c35f7383692b99f4f1086123acbc3cb247e775a4cebe39985b5302fb9b2
-    local_sha256: 4584226a53a94e4014fdbe8c27ee8434bd8f5f5ab170c2d86abf2a5f3b15267d
+    local_sha256: 732d3c7dbe8e42ad0b94d9e27718a7d34a59709bd21978b3c92caef9b53b30c0
     acknowledged_at: "2026-07-16"
   assets/css/main.scss:
     owner: al_folio_core
     gem_version: 1.0.11
     upstream_path: assets/css/main.scss
     upstream_sha256: 437c6c911c596391413e435dc0ea7095e682e85c572c1fd3fff69f9597455b3e
-    local_sha256: ddc6a1e98105ae2d866a0f1a8d1f304444c2d67de37c041118dbaca33b39ae2d
+    local_sha256: 4a4a5942c4d0832ade3307ad625e493e673f1aca65eb08c202c8687393abaf47
     acknowledged_at: "2026-07-16"

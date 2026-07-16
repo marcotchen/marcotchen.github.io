@@ -82,6 +82,37 @@ html[data-theme="dark"] .post article .bio a:hover {
   }
 }
 
+.navbar.navbar-light .navbar-brand.title {
+  font-weight: 700 !important;
+}
+
+.navbar.navbar-light .navbar-brand.title .font-weight-bold {
+  font-weight: inherit;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  font-weight: 400 !important;
+}
+
+#search-toggle .nav-link,
+#search-toggle .nav-link i::before,
+#light-toggle i,
+#light-toggle i::before {
+  color: var(--global-text-color);
+}
+
+#search-toggle:hover .nav-link,
+#search-toggle:hover .nav-link i::before,
+#light-toggle:hover i,
+#light-toggle:hover i::before {
+  color: var(--personal-accent-hover-color);
+}
+
+#light-toggle-system {
+  display: none !important;
+}
+
 .post-header .subtitle-accent {
   color: var(--personal-accent-color);
   font-weight: 700;
@@ -98,7 +129,10 @@ html[data-theme="dark"] .post article .bio a:hover {
 }
 
 #search-toggle,
-#light-toggle,
+#light-toggle {
+  color: var(--global-text-color);
+}
+
 .publications .fa-circle-info {
   color: var(--personal-accent-color);
 }
@@ -137,6 +171,14 @@ blockquote {
 ::highlight(search) {
   background-color: var(--personal-accent-color);
   color: white;
+}
+
+ninja-keys {
+  --ninja-accent-color: var(--personal-accent-color);
+}
+
+ninja-keys::part(ninja-input) {
+  caret-color: var(--personal-accent-color);
 }
 
 .publications {

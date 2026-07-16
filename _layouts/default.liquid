@@ -63,5 +63,17 @@
 
     <!-- JavaScripts -->
     {% include scripts.liquid %}
+    {% if site.enable_darkmode %}
+      <script>
+        // Keep the theme control to two explicit states: light and dark.
+        if (determineThemeSetting() === 'system') {
+          setThemeSetting(determineComputedTheme());
+        }
+
+        toggleThemeSetting = () => {
+          setThemeSetting(determineComputedTheme() === 'dark' ? 'light' : 'dark');
+        };
+      </script>
+    {% endif %}
   </body>
 </html>

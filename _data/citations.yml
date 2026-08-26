@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-08-14'
+  last_updated: '2026-08-26'
 papers:
   PoNYye4AAAAJ:2osOgNQ5qMEC:
     citations: 3
     title: 'Sagebwd: A trainable low-bit attention'
     year: '2026'
   PoNYye4AAAAJ:9yKSN-GCB0IC:
-    citations: 57
+    citations: 59
     title: "Se\xF1orita-2m: A high-quality instruction-based dataset for general video editing by video specialists"
     year: '2026'
   PoNYye4AAAAJ:UeHWp8X0CEIC:
@@ -22,6 +22,6 @@ papers:
     title: 'DNT: a Deeply Normalized Transformer that can be trained by Momentum SGD'
     year: '2026'
   PoNYye4AAAAJ:u-x6o8ySG0sC:
-    citations: 2
+    citations: 3
     title: 'SimpleGPT: Improving GPT via A Simple Normalization Strategy'
     year: '2026'
